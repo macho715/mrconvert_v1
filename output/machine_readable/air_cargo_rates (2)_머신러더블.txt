@@ -1,0 +1,563 @@
+JSON_DATA: air_cargo_rates (2).json
+GENERATED_AT: 2025-10-23T01:06:54.795965
+
+dataset: air_cargo_rates
+source_file: air_cargo_rates.xlsx
+generated_at: 2025-08-12T19:51:50.435649
+currency_policy:
+  base: USD
+  fixed_fx:
+    USD_AED: 3.6725
+  note: CURRENCY_MISMATCH 플래그 규칙
+validation_rules:
+  layer1_contract_tolerance: 0.03
+  autofail_threshold: 0.15
+records:
+  [0]:
+    no: 1
+    cargo_type: Air
+    port: Dubai Airport
+    destination: None
+    detail_cargo_type: LCL Cargo
+    description: Custom Clearance
+    unit: per B/L
+    remark: Incl. all other surcharges related custom clearance
+    rate:
+      amount: 350.0
+      currency: USD
+      unit: per B/L
+      tolerance: 0.03
+    _line_no: 1
+    _sheet: air_cargo_rates.xlsx
+  [1]:
+    no: 2
+    cargo_type: Air
+    port: Dubai Airport
+    destination: None
+    detail_cargo_type: LCL Cargo
+    description: DO Fee
+    unit: per B/L
+    remark: None
+    rate:
+      amount: 150.0
+      currency: USD
+      unit: per B/L
+      tolerance: 0.03
+    _line_no: 2
+    _sheet: air_cargo_rates.xlsx
+  [2]:
+    no: 3
+    cargo_type: Air
+    port: Dubai Airport
+    destination: None
+    detail_cargo_type: LCL Cargo
+    description: Terminal Handling Charge
+    unit: per KG
+    rates(usd): At cost
+    remark: Incl. all other surcharges related port handling
+    _line_no: 3
+    _sheet: air_cargo_rates.xlsx
+  [3]:
+    no: 4
+    cargo_type: Air
+    port: Dubai Airport
+    destination: None
+    detail_cargo_type: LCL Cargo
+    description: Inland Trucking (Upto 1ton)
+    unit: per truck
+    rates(usd): None
+    remark: Free time 3 hours at POL+ 3 hours at POD non-reversible, thereafter, USD52.00 per hour
+    _line_no: 4
+    _sheet: air_cargo_rates.xlsx
+  [4]:
+    no: 5
+    cargo_type: Air
+    port: Dubai Airport
+    destination: MIRFA SITE
+    detail_cargo_type: LCL Cargo
+    description: Inland Trucking
+    unit: per truck
+    remark: None
+    rate:
+      amount: 290.0
+      currency: USD
+      unit: per truck
+      tolerance: 0.03
+    _line_no: 5
+    _sheet: air_cargo_rates.xlsx
+  [5]:
+    no: 6
+    cargo_type: Air
+    port: Dubai Airport
+    destination: SHUWEIHAT Site
+    detail_cargo_type: LCL Cargo
+    description: Inland Trucking
+    unit: per truck
+    remark: None
+    rate:
+      amount: 410.0
+      currency: USD
+      unit: per truck
+      tolerance: 0.03
+    _line_no: 6
+    _sheet: air_cargo_rates.xlsx
+  [6]:
+    no: 7
+    cargo_type: Air
+    port: Dubai Airport
+    destination: Storage Yard
+    detail_cargo_type: LCL Cargo
+    description: Inland Trucking
+    unit: per truck
+    remark: None
+    rate:
+      amount: 200.0
+      currency: USD
+      unit: per truck
+      tolerance: 0.03
+    _line_no: 7
+    _sheet: air_cargo_rates.xlsx
+  [7]:
+    no: 8
+    cargo_type: Air
+    port: Dubai Airport
+    destination: Hamariya free zone, Sharjah
+    detail_cargo_type: LCL Cargo
+    description: Inland Trucking
+    unit: per truck
+    remark: None
+    rate:
+      amount: 250.0
+      currency: USD
+      unit: per truck
+      tolerance: 0.03
+    _line_no: 8
+    _sheet: air_cargo_rates.xlsx
+  [8]:
+    no: 9
+    cargo_type: Air
+    port: Dubai Airport
+    destination: None
+    detail_cargo_type: LCL Cargo
+    description: Inland Trucking (Above 1ton, Upto 3ton)
+    unit: per truck
+    rates(usd): None
+    remark: Free time 3 hours at POL+ 3 hours at POD non-reversible, thereafter, USD52.00 per hour
+    _line_no: 9
+    _sheet: air_cargo_rates.xlsx
+  [9]:
+    no: 10
+    cargo_type: Air
+    port: Dubai Airport
+    destination: MIRFA SITE
+    detail_cargo_type: LCL Cargo
+    description: Inland Trucking
+    unit: per truck
+    remark: None
+    rate:
+      amount: 290.0
+      currency: USD
+      unit: per truck
+      tolerance: 0.03
+    _line_no: 10
+    _sheet: air_cargo_rates.xlsx
+  [10]:
+    no: 11
+    cargo_type: Air
+    port: Dubai Airport
+    destination: SHUWEIHAT Site
+    detail_cargo_type: LCL Cargo
+    description: Inland Trucking
+    unit: per truck
+    remark: None
+    rate:
+      amount: 410.0
+      currency: USD
+      unit: per truck
+      tolerance: 0.03
+    _line_no: 11
+    _sheet: air_cargo_rates.xlsx
+  [11]:
+    no: 12
+    cargo_type: Air
+    port: Dubai Airport
+    destination: Storage Yard
+    detail_cargo_type: LCL Cargo
+    description: Inland Trucking
+    unit: per truck
+    remark: None
+    rate:
+      amount: 200.0
+      currency: USD
+      unit: per truck
+      tolerance: 0.03
+    _line_no: 12
+    _sheet: air_cargo_rates.xlsx
+  [12]:
+    no: 13
+    cargo_type: Air
+    port: Dubai Airport
+    destination: Hamariya free zone, Sharjah
+    detail_cargo_type: LCL Cargo
+    description: Inland Trucking
+    unit: per truck
+    remark: None
+    rate:
+      amount: 250.0
+      currency: USD
+      unit: per truck
+      tolerance: 0.03
+    _line_no: 13
+    _sheet: air_cargo_rates.xlsx
+  [13]:
+    no: 14
+    cargo_type: Air
+    port: Dubai Airport
+    destination: None
+    detail_cargo_type: LCL Cargo
+    description: Inland Trucking (Above 3ton, Upto 5ton)
+    unit: per truck
+    rates(usd): None
+    remark: Free time 3 hours at POL+ 3 hours at POD non-reversible, thereafter, USD52.00 per hour
+    _line_no: 14
+    _sheet: air_cargo_rates.xlsx
+  [14]:
+    no: 15
+    cargo_type: Air
+    port: Dubai Airport
+    destination: MIRFA SITE
+    detail_cargo_type: LCL Cargo
+    description: Inland Trucking
+    unit: per truck
+    remark: None
+    rate:
+      amount: 370.0
+      currency: USD
+      unit: per truck
+      tolerance: 0.03
+    _line_no: 15
+    _sheet: air_cargo_rates.xlsx
+  [15]:
+    no: 16
+    cargo_type: Air
+    port: Dubai Airport
+    destination: SHUWEIHAT Site
+    detail_cargo_type: LCL Cargo
+    description: Inland Trucking
+    unit: per truck
+    remark: None
+    rate:
+      amount: 460.0
+      currency: USD
+      unit: per truck
+      tolerance: 0.03
+    _line_no: 16
+    _sheet: air_cargo_rates.xlsx
+  [16]:
+    no: 17
+    cargo_type: Air
+    port: Dubai Airport
+    destination: Storage Yard
+    detail_cargo_type: LCL Cargo
+    description: Inland Trucking
+    unit: per truck
+    remark: None
+    rate:
+      amount: 250.0
+      currency: USD
+      unit: per truck
+      tolerance: 0.03
+    _line_no: 17
+    _sheet: air_cargo_rates.xlsx
+  [17]:
+    no: 18
+    cargo_type: Air
+    port: Dubai Airport
+    destination: Hamariya free zone, Sharjah
+    detail_cargo_type: LCL Cargo
+    description: Inland Trucking
+    unit: per truck
+    remark: None
+    rate:
+      amount: 300.0
+      currency: USD
+      unit: per truck
+      tolerance: 0.03
+    _line_no: 18
+    _sheet: air_cargo_rates.xlsx
+  [18]:
+    no: 19
+    cargo_type: Air
+    port: Dubai Airport
+    destination: None
+    detail_cargo_type: LCL Cargo
+    description: Inspection Fee (If required)
+    unit: per container
+    rates(usd): At Cost
+    remark: None
+    _line_no: 19
+    _sheet: air_cargo_rates.xlsx
+  [19]:
+    no: 20
+    cargo_type: Air
+    port: Dubai Airport
+    destination: None
+    detail_cargo_type: LCL Cargo
+    description: Storage Charge at Airport
+    unit: per KG
+    rates(usd): At Cost after free time
+    remark: * Indicate days of free time
+    _line_no: 20
+    _sheet: air_cargo_rates.xlsx
+  [20]:
+    no: 21
+    cargo_type: Air
+    port: Abu Dhabi Airport
+    destination: None
+    detail_cargo_type: LCL Cargo
+    description: Custom Clearance
+    unit: per B/L
+    remark: Incl. all other surcharges related custom clearance
+    rate:
+      amount: 150.0
+      currency: USD
+      unit: per B/L
+      tolerance: 0.03
+    _line_no: 21
+    _sheet: air_cargo_rates.xlsx
+  [21]:
+    no: 22
+    cargo_type: Air
+    port: Abu Dhabi Airport
+    destination: None
+    detail_cargo_type: LCL Cargo
+    description: DO Fee
+    unit: per B/L
+    remark: None
+    rate:
+      amount: 80.0
+      currency: USD
+      unit: per B/L
+      tolerance: 0.03
+    _line_no: 22
+    _sheet: air_cargo_rates.xlsx
+  [22]:
+    no: 23
+    cargo_type: Air
+    port: Abu Dhabi Airport
+    destination: None
+    detail_cargo_type: LCL Cargo
+    description: Terminal Handling Charge
+    unit: per KG
+    remark: Incl. all other surcharges related port handling
+    rate:
+      amount: 0.55
+      currency: USD
+      unit: per KG
+      tolerance: 0.03
+    _line_no: 23
+    _sheet: air_cargo_rates.xlsx
+  [23]:
+    no: 24
+    cargo_type: Air
+    port: Abu Dhabi Airport
+    destination: None
+    detail_cargo_type: LCL Cargo
+    description: Inland Trucking (Upto 1ton)
+    unit: per truck
+    rates(usd): None
+    remark: Incl. Trailer Detention
+    _line_no: 24
+    _sheet: air_cargo_rates.xlsx
+  [24]:
+    no: 25
+    cargo_type: Air
+    port: Abu Dhabi Airport
+    destination: MIRFA SITE
+    detail_cargo_type: LCL Cargo
+    description: Inland Trucking
+    unit: per truck
+    remark: None
+    rate:
+      amount: 150.0
+      currency: USD
+      unit: per truck
+      tolerance: 0.03
+    _line_no: 25
+    _sheet: air_cargo_rates.xlsx
+  [25]:
+    no: 26
+    cargo_type: Air
+    port: Abu Dhabi Airport
+    destination: SHUWEIHAT Site
+    detail_cargo_type: LCL Cargo
+    description: Inland Trucking
+    unit: per truck
+    remark: None
+    rate:
+      amount: 210.0
+      currency: USD
+      unit: per truck
+      tolerance: 0.03
+    _line_no: 26
+    _sheet: air_cargo_rates.xlsx
+  [26]:
+    no: 27
+    cargo_type: Air
+    port: Abu Dhabi Airport
+    destination: Storage Yard
+    detail_cargo_type: LCL Cargo
+    description: Inland Trucking
+    unit: per truck
+    remark: None
+    rate:
+      amount: 100.0
+      currency: USD
+      unit: per truck
+      tolerance: 0.03
+    _line_no: 27
+    _sheet: air_cargo_rates.xlsx
+  [27]:
+    no: 28
+    cargo_type: Air
+    port: Abu Dhabi Airport
+    destination: None
+    detail_cargo_type: LCL Cargo
+    description: Inland Trucking (Above 1ton, Upto 3ton)
+    unit: per truck
+    rates(usd): None
+    remark: Incl. Trailer Detention
+    _line_no: 28
+    _sheet: air_cargo_rates.xlsx
+  [28]:
+    no: 29
+    cargo_type: Air
+    port: Abu Dhabi Airport
+    destination: MIRFA SITE
+    detail_cargo_type: LCL Cargo
+    description: Inland Trucking
+    unit: per truck
+    remark: None
+    rate:
+      amount: 150.0
+      currency: USD
+      unit: per truck
+      tolerance: 0.03
+    _line_no: 29
+    _sheet: air_cargo_rates.xlsx
+  [29]:
+    no: 30
+    cargo_type: Air
+    port: Abu Dhabi Airport
+    destination: SHUWEIHAT Site
+    detail_cargo_type: LCL Cargo
+    description: Inland Trucking
+    unit: per truck
+    remark: None
+    rate:
+      amount: 210.0
+      currency: USD
+      unit: per truck
+      tolerance: 0.03
+    _line_no: 30
+    _sheet: air_cargo_rates.xlsx
+  [30]:
+    no: 31
+    cargo_type: Air
+    port: Abu Dhabi Airport
+    destination: Storage Yard
+    detail_cargo_type: LCL Cargo
+    description: Inland Trucking
+    unit: per truck
+    remark: None
+    rate:
+      amount: 100.0
+      currency: USD
+      unit: per truck
+      tolerance: 0.03
+    _line_no: 31
+    _sheet: air_cargo_rates.xlsx
+  [31]:
+    no: 32
+    cargo_type: Air
+    port: Abu Dhabi Airport
+    destination: None
+    detail_cargo_type: LCL Cargo
+    description: Inland Trucking (Above 3ton, Upto 5ton)
+    unit: per truck
+    rates(usd): None
+    remark: Incl. Trailer Detention
+    _line_no: 32
+    _sheet: air_cargo_rates.xlsx
+  [32]:
+    no: 33
+    cargo_type: Air
+    port: Abu Dhabi Airport
+    destination: MIRFA SITE
+    detail_cargo_type: LCL Cargo
+    description: Inland Trucking
+    unit: per truck
+    remark: None
+    rate:
+      amount: 180.0
+      currency: USD
+      unit: per truck
+      tolerance: 0.03
+    _line_no: 33
+    _sheet: air_cargo_rates.xlsx
+  [33]:
+    no: 34
+    cargo_type: Air
+    port: Abu Dhabi Airport
+    destination: SHUWEIHAT Site
+    detail_cargo_type: LCL Cargo
+    description: Inland Trucking
+    unit: per truck
+    remark: None
+    rate:
+      amount: 250.0
+      currency: USD
+      unit: per truck
+      tolerance: 0.03
+    _line_no: 34
+    _sheet: air_cargo_rates.xlsx
+  [34]:
+    no: 35
+    cargo_type: Air
+    port: Abu Dhabi Airport
+    destination: Storage Yard
+    detail_cargo_type: LCL Cargo
+    description: Inland Trucking
+    unit: per truck
+    remark: None
+    rate:
+      amount: 120.0
+      currency: USD
+      unit: per truck
+      tolerance: 0.03
+    _line_no: 35
+    _sheet: air_cargo_rates.xlsx
+  [35]:
+    no: 36
+    cargo_type: Air
+    port: Abu Dhabi Airport
+    destination: None
+    detail_cargo_type: LCL Cargo
+    description: Inspection Fee (If required)
+    unit: per container
+    rates(usd): At Cost
+    remark: None
+    _line_no: 36
+    _sheet: air_cargo_rates.xlsx
+  [36]:
+    no: 37
+    cargo_type: Air
+    port: Abu Dhabi Airport
+    destination: None
+    detail_cargo_type: LCL Cargo
+    description: Storage Charge at Airport
+    unit: per KG
+    rates(usd): At Cost after free time
+    remark: * Indicate days of free time
+    _line_no: 37
+    _sheet: air_cargo_rates.xlsx

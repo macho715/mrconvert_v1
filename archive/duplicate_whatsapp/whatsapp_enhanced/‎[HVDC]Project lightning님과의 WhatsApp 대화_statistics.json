@@ -1,0 +1,1139 @@
+{
+  "conversation_info": {
+    "group_name": "HVDC Project lightning",
+    "created_at": "2022-11-15T11:20:00",
+    "participant_count": 26,
+    "date_range": {
+      "start": "2022-11-15T11:20:00",
+      "end": "2025-10-22T19:53:00"
+    },
+    "statistics": {
+      "total_messages": 11517,
+      "message_types": {
+        "system": 112,
+        "text": 11147,
+        "edited": 157,
+        "media": 101
+      },
+      "participants": {
+        "System": {
+          "message_count": 112,
+          "vessels_mentioned": [],
+          "locations_mentioned": []
+        },
+        "kEn 🏄🏻🌊": {
+          "message_count": 97,
+          "vessels_mentioned": [
+            "Tamara",
+            "Jopetwil 62"
+          ],
+          "locations_mentioned": [
+            "Mirfa",
+            "AGI",
+            "SHU",
+            "MOSB",
+            "DAS"
+          ]
+        },
+        "Haitham": {
+          "message_count": 1024,
+          "vessels_mentioned": [
+            "Jpt62",
+            "Jopetwil 62",
+            "Update",
+            "LCT Comarco",
+            "Bushra",
+            "LCT Sanabel",
+            "Bad Weather, Vessels Sheltering",
+            "LCT Thuraya",
+            "LCT scheduled",
+            "Jpt71",
+            "Razan",
+            "LCT thuraya",
+            "lct thuraya",
+            "Marwah",
+            "Tamara",
+            "Thuraya",
+            "LCT done",
+            "Jopetwil 71",
+            "LCT Marwah"
+          ],
+          "locations_mentioned": [
+            "AGI",
+            "TBU",
+            "tbu",
+            "MOSB",
+            "DAS",
+            "MW4"
+          ]
+        },
+        "Shariff": {
+          "message_count": 698,
+          "vessels_mentioned": [
+            "Jpt62",
+            "Marwah",
+            "Tamara",
+            "Thuraya",
+            "LCT sequence",
+            "Jpt71",
+            "Jopetwil 62",
+            "Razan",
+            "LCT toyoof",
+            "Bushra"
+          ],
+          "locations_mentioned": [
+            "JDN",
+            "AGI",
+            "Mirfa",
+            "SHU",
+            "MIR",
+            "MOSB",
+            "DAS"
+          ]
+        },
+        "Ramaju Das": {
+          "message_count": 1908,
+          "vessels_mentioned": [
+            "LCT THARAYA",
+            "LCT YEAM",
+            "LCT HORYEAH",
+            "LCT BUSHRA",
+            "LCT Sea",
+            "LCT Yeam",
+            "Bushra",
+            "LCT THUARAYA",
+            "LCT OCEAN",
+            "LCT TARFFAH",
+            "LCT Tarffah",
+            "LCT Bushra",
+            "LCT JPT",
+            "LCT THUARAY",
+            "LCT RAZAN",
+            "LCT waiting",
+            "Wind Speed",
+            "LCT THURAYA",
+            "LCT BIMA",
+            "LCT TAIBAH",
+            "LCT HOREYH",
+            "LCT TAMARA",
+            "Razan",
+            "LCT MARWAH",
+            "LCT Razan",
+            "LCT SEA",
+            "LCT JOPETWILL",
+            "TAMARA",
+            "Tamara",
+            "Marwah",
+            "Thuraya",
+            "LCT at",
+            "LCT KAWAKEEB",
+            "LCT JOPETWIL",
+            "LCT YHURAYA",
+            "LCT HOREYEH"
+          ],
+          "locations_mentioned": [
+            "JDN",
+            "AGI",
+            "TBU",
+            "SHU",
+            "MIR",
+            "MOSB",
+            "DAS"
+          ]
+        },
+        "Eddel Jose": {
+          "message_count": 233,
+          "vessels_mentioned": [],
+          "locations_mentioned": [
+            "SHU",
+            "MOSB",
+            "Mirfa"
+          ]
+        },
+        "국일 Kim": {
+          "message_count": 956,
+          "vessels_mentioned": [
+            "LCT status",
+            "Jpt62",
+            "LCT Tamara",
+            "Jopetwil 62",
+            "LCT Sea",
+            "Bushra",
+            "LCT Bushra",
+            "Capital survey equipment",
+            "offhired",
+            "LCT Bima",
+            "LCT JPTW",
+            "LCT Thuraya",
+            "LCT Wardeh",
+            "LCT sea",
+            "LCT Jopetwil",
+            "DAS-CICPA Camera",
+            "JPT 62 / AGI-Drinking water",
+            "LCT movement",
+            "Hitachi outdoor boxes",
+            "AGI-Wooden box delivery issue",
+            "LCT did",
+            "JPTW 62",
+            "Jpt71",
+            "Granite - Doors",
+            "Razan",
+            "LCT pioneer",
+            "TAMARA",
+            "Marwah",
+            "Tamara",
+            "Thuraya",
+            "Best way EQ",
+            "Jopetwil 71",
+            "LCT Marwah",
+            "LCT jewaher"
+          ],
+          "locations_mentioned": [
+            "Mirfa",
+            "AGI",
+            "SHU",
+            "MIR",
+            "MOSB",
+            "MZP",
+            "DAS",
+            "MW4"
+          ]
+        },
+        "Khemlal-SCT Logistics": {
+          "message_count": 2575,
+          "vessels_mentioned": [
+            "AGI Vessel Status_26.08.2025",
+            "AGI Backload (LCT Khayrat) Vessel Route: AGI-UAAI-MOSB",
+            "LCT Sea",
+            "AGI Vessel Status_14.09.2025",
+            "LCT Jurry",
+            "AGI Backload on LCT Aurora Scorpio,",
+            "AGI Backload_21.10.2025 (LCT Wardeh-1)",
+            "AGI Backload (LCT Jopetwil 62)_15.09.2025",
+            "AGI Backload_07.10.2025 (LCT Wardeh-1)",
+            "LCT Jopetwil",
+            "LCT Wardah",
+            "LCT Kawthar",
+            "AGI Vessel Operation Plan (04.09.2025)",
+            "AGI Backload on LCT Khayrat, ETA: 01.07.2025",
+            "AGI Vessel Operation Plan_2025.09.27",
+            "yet to",
+            "AGI Vessel Status_01.09.2025",
+            "Razan",
+            "LCT Aroura",
+            "AGI Backload_10.10.2025 (LCT Jurry)",
+            "LCT required",
+            "LCt Razan",
+            "LCT WARDEH",
+            "LCT JEWAHER",
+            "AGI Backload (LCT Kawthar-1 (06.09.2025), Vessel Route: AGI- UAAI -MOSB",
+            "AGI Backload (LCT Comarco Palma)_14.09.2025",
+            "Thuraya",
+            "AGI Backload (LCT Jopetwil 62)_11.09.2025",
+            "AGI Vessel update:",
+            "LCt Comarco",
+            "AGI Backload (LCT Sea Mullet)_01.09.2025",
+            "LCT Kawakeb",
+            "AGI Vessel Plan:",
+            "LCT Jewaher",
+            "AGI Backload (LCT Sea Parrot_30.08.2025)",
+            "LCT Sajay",
+            "Jopetwil 62",
+            "LCT was",
+            "LCT Comarco",
+            "AGI Vessel Operation Status_17.09.2025",
+            "AGI Backload_LCT Wardeh-1 (01.10.2025)",
+            "AGI Backload_09.10.2025 (LCT Sea Parrot)",
+            "AGI Backload (LCT Jewaher-1)",
+            "AGI Backload_10.10.2025 (LCT Wardeh-1)",
+            "LCT Wardeh",
+            "AGI Backload (LCT Kawakeb)_02.09.2025",
+            "LCT Khayrat",
+            "LCT wardeh",
+            "AGI Vessel Status_28.08.2025",
+            "Jopetwil 6",
+            "AGI Backload (LCT Sea Mullet)_20.09.2025",
+            "AGI Vessel Status_31.08.2025",
+            "AGI Vessel Status_02.09.2025",
+            "LCT Safeen",
+            "AGI RORO Backload (LCT Jopetwil 62)",
+            "LCT Ramp",
+            "AGI Backload on LCT Khayrat",
+            "Marwah",
+            "AGI Backload (LCT Sea Parrot)_12.09.2025",
+            "Jopetwil 71",
+            "LCT Marwah",
+            "AGI Vessel Status_24.08.2025",
+            "Jpt62",
+            "LCT Tamara",
+            "LCT Wardeh-1",
+            "AGI Vessel Plan_updated",
+            "LCT Razan-1 Update",
+            "Bushra",
+            "LCT Razan-1 Update:",
+            "LCT jopetwil",
+            "LCT Bushra",
+            "AGI Backload (LCT Jurry)-02.09.2025",
+            "LCT Thuraya",
+            "AGI Vessel Operation Plan (03.09.2025)",
+            "AGI Backload_01.10.2025 (LCT Razan-1)",
+            "LCT Allianz",
+            "AGI Backload (LCT Wardeh-1)_28.09.2025",
+            "AGI Backload on LCT Comarco Palma",
+            "AGI Vessel Operation Plan:",
+            "AGI Backload (LCT Aurora Scorpio)_22.09.2025",
+            "LCT KAWTHAR",
+            "AGI Backload (LCT Wardeh-1), Cast off to Asseifiya,",
+            "```only```",
+            "Jpt71",
+            "AGI Backload (LCT Wardeh-1)_13.09.2025",
+            "AGI Backload on LCT Sea Pioneer, 22.07.2025",
+            "LCT Aurora",
+            "The LCT Razan-1 Update:",
+            "AGI Vessel Operation Status_11.09.202",
+            "prior to shipment arrival.",
+            "AGI Backload_30.09.2025 (LCT Sea Pioneer)",
+            "AGI Vessel Status_30.08.2025",
+            "AGI Vessel operation Sequence: 1st  LCT Jopetwil 62 - 2nd  Wardeh-1 - then Razan-1",
+            "AGI Backload (LCT Pioneer Eagle)_26.09.2025",
+            "LCT RAzan",
+            "LCT J71",
+            "AGI vessel Operation Plan:",
+            "AGI Backload (LCT Comarco Palma)",
+            "LCT Yeam",
+            "AGI Backload (LCT Jewaher-1)_20.09.2025",
+            "For Information:",
+            "LCT Nasayem",
+            "AGI Backload",
+            "LCT Bima",
+            "AGI Backload_05.10.2025 (LCT Sea Parrot)",
+            "LCT Jawaher",
+            "AGI Backload (LCT Sea Mullet)_26.09.2025",
+            "AGI Backload, LCT Jewaher-1 (Vessel Route: AGI- ETTK- MOSB",
+            "LCT Sajaya",
+            "AGI Backload LCT Wardeh-1",
+            "LCT Pioneer",
+            "LCT Razan",
+            "Tamara",
+            "AGI Backload_20.10.2025 (LCT Kawthar)",
+            "Jopetwil 63",
+            "AGI Backload (LCT Sajay)",
+            "AGI Backload_03.10.2025 (LCT Wardeh-1)",
+            "AGI Backload_17.10.2025 (LCT Sea Parrot)",
+            "AGI Backload - LCT Sea Parrot  (Vessel Route: AGI - UAAI-MOSB)"
+          ],
+          "locations_mentioned": [
+            "JDN",
+            "AGI",
+            "SHU",
+            "MIR",
+            "MOSB",
+            "DAS",
+            "MW4"
+          ]
+        },
+        "Bimal": {
+          "message_count": 778,
+          "vessels_mentioned": [
+            "LCT  Bushra",
+            "tamara",
+            "Marwah",
+            "Tamara",
+            "Thuraya",
+            "LCT Tamara",
+            "LCT Bushra",
+            "LCT Senabal",
+            "Jpt71",
+            "LCT Thuraya",
+            "LCT  Thuraya",
+            "Razan",
+            "Bushra",
+            "LCT Razan",
+            "LCT OCEAN"
+          ],
+          "locations_mentioned": [
+            "TBU",
+            "DAS",
+            "MOSB",
+            "AGI"
+          ]
+        },
+        "DaN": {
+          "message_count": 345,
+          "vessels_mentioned": [
+            "Dear AGI Team,"
+          ],
+          "locations_mentioned": [
+            "MIRFA",
+            "mirfa",
+            "Mirfa",
+            "AGI",
+            "SHU",
+            "MIR",
+            "MOSB",
+            "DAS"
+          ]
+        },
+        "CHA": {
+          "message_count": 40,
+          "vessels_mentioned": [
+            " Vessel Tracking",
+            "(Updated 14:43)"
+          ],
+          "locations_mentioned": [
+            "SHU",
+            "DAS",
+            "Mirfa",
+            "mirfa"
+          ]
+        },
+        "+971 50 231 5611": {
+          "message_count": 30,
+          "vessels_mentioned": [
+            "Razan",
+            "Jopetwil 62",
+            "LCT Wardeh",
+            "LCT Jopetwil"
+          ],
+          "locations_mentioned": [
+            "DAS",
+            "AGI"
+          ]
+        },
+        "Sajid H Khan": {
+          "message_count": 622,
+          "vessels_mentioned": [
+            "AGI Backload on LCT Razan-1, Returned Back in Same Vessel",
+            "The LCT Razan-1 Entered to East Harbor @ 09:15",
+            "LCT Jewaher",
+            "Jopetwil 62",
+            "57th Batch GRM Dune Sand",
+            "AGI Backload on LCT Jopetwil-62,",
+            "LCT KAUTHAR",
+            "LCT Wardeh",
+            "LCT Jopetwil",
+            "LCT Razan-1 is Underway to AGI",
+            "Razan",
+            "LCT Razan",
+            "AGI Backload in LCT Jopetwil-62",
+            "LCT NASAYEM",
+            "LCT WARDEH",
+            "AGI Backload on LCT Jewaher-1,",
+            "Tamara",
+            "TAMARA",
+            "LCT JOPETWIL",
+            "Jopetwil 71",
+            "60th Batch GRM 20MM Aggregate",
+            "LCT Aurora",
+            "LCT KAWATHAR"
+          ],
+          "locations_mentioned": [
+            "JDN",
+            "DAS",
+            "MOSB",
+            "AGI"
+          ]
+        },
+        "Samuel": {
+          "message_count": 122,
+          "vessels_mentioned": [],
+          "locations_mentioned": [
+            "SHU"
+          ]
+        },
+        "Friday D 13th": {
+          "message_count": 26,
+          "vessels_mentioned": [
+            "Jopetwil 71"
+          ],
+          "locations_mentioned": [
+            "SHU"
+          ]
+        },
+        "Arvin": {
+          "message_count": 63,
+          "vessels_mentioned": [],
+          "locations_mentioned": [
+            "MIRFA",
+            "Mirfa",
+            "SHU",
+            "MOSB",
+            "DAS"
+          ]
+        },
+        "Jhysn": {
+          "message_count": 36,
+          "vessels_mentioned": [
+            "Thuraya"
+          ],
+          "locations_mentioned": []
+        },
+        "Nicole (SHU)": {
+          "message_count": 329,
+          "vessels_mentioned": [
+            "Road closure"
+          ],
+          "locations_mentioned": [
+            "JDN",
+            "MIRFA",
+            "mirfa",
+            "Mirfa",
+            "AGI",
+            "SHU",
+            "MIR",
+            "MOSB",
+            "DAS"
+          ]
+        },
+        "Wonderlust": {
+          "message_count": 18,
+          "vessels_mentioned": [
+            "Jopetwil 71",
+            "Jopetwil 62",
+            "Razan",
+            "LCT Jopetwil",
+            "LCT Razan"
+          ],
+          "locations_mentioned": [
+            "MOSB",
+            "AGI"
+          ]
+        },
+        "+971 56 723 6792": {
+          "message_count": 7,
+          "vessels_mentioned": [
+            "Thuraya"
+          ],
+          "locations_mentioned": []
+        },
+        "ronpap20": {
+          "message_count": 54,
+          "vessels_mentioned": [
+            "Jpt62"
+          ],
+          "locations_mentioned": [
+            "AGI"
+          ]
+        },
+        "상욱": {
+          "message_count": 1329,
+          "vessels_mentioned": [
+            "Jpt62",
+            "TAMARA",
+            "Marwah",
+            "Tamara",
+            "Thuraya",
+            "LCT  Overnight",
+            "Jopetwil 71",
+            "Jpt71",
+            "LCT BUSHRA",
+            "Jopetwil 62",
+            "Razan",
+            "Bushra"
+          ],
+          "locations_mentioned": [
+            "JDN",
+            "AGI",
+            "SHU",
+            "MIR",
+            "MOSB",
+            "MZP",
+            "DAS",
+            "MW4"
+          ]
+        },
+        "Karthi": {
+          "message_count": 2,
+          "vessels_mentioned": [],
+          "locations_mentioned": []
+        },
+        "+971 50 689 0538": {
+          "message_count": 79,
+          "vessels_mentioned": [],
+          "locations_mentioned": [
+            "MIRFA",
+            "MOSB",
+            "SHU",
+            "mirfa"
+          ]
+        },
+        "+971 56 577 3227": {
+          "message_count": 6,
+          "vessels_mentioned": [
+            "Jopetwil 71"
+          ],
+          "locations_mentioned": []
+        },
+        "+971 50 297 2631": {
+          "message_count": 28,
+          "vessels_mentioned": [],
+          "locations_mentioned": []
+        }
+      }
+    }
+  },
+  "statistics": {
+    "total_messages": 11517,
+    "message_types": {
+      "system": 112,
+      "text": 11147,
+      "edited": 157,
+      "media": 101
+    },
+    "participants": {
+      "System": {
+        "message_count": 112,
+        "vessels_mentioned": [],
+        "locations_mentioned": []
+      },
+      "kEn 🏄🏻🌊": {
+        "message_count": 97,
+        "vessels_mentioned": [
+          "Tamara",
+          "Jopetwil 62"
+        ],
+        "locations_mentioned": [
+          "Mirfa",
+          "AGI",
+          "SHU",
+          "MOSB",
+          "DAS"
+        ]
+      },
+      "Haitham": {
+        "message_count": 1024,
+        "vessels_mentioned": [
+          "Jpt62",
+          "Jopetwil 62",
+          "Update",
+          "LCT Comarco",
+          "Bushra",
+          "LCT Sanabel",
+          "Bad Weather, Vessels Sheltering",
+          "LCT Thuraya",
+          "LCT scheduled",
+          "Jpt71",
+          "Razan",
+          "LCT thuraya",
+          "lct thuraya",
+          "Marwah",
+          "Tamara",
+          "Thuraya",
+          "LCT done",
+          "Jopetwil 71",
+          "LCT Marwah"
+        ],
+        "locations_mentioned": [
+          "AGI",
+          "TBU",
+          "tbu",
+          "MOSB",
+          "DAS",
+          "MW4"
+        ]
+      },
+      "Shariff": {
+        "message_count": 698,
+        "vessels_mentioned": [
+          "Jpt62",
+          "Marwah",
+          "Tamara",
+          "Thuraya",
+          "LCT sequence",
+          "Jpt71",
+          "Jopetwil 62",
+          "Razan",
+          "LCT toyoof",
+          "Bushra"
+        ],
+        "locations_mentioned": [
+          "JDN",
+          "AGI",
+          "Mirfa",
+          "SHU",
+          "MIR",
+          "MOSB",
+          "DAS"
+        ]
+      },
+      "Ramaju Das": {
+        "message_count": 1908,
+        "vessels_mentioned": [
+          "LCT THARAYA",
+          "LCT YEAM",
+          "LCT HORYEAH",
+          "LCT BUSHRA",
+          "LCT Sea",
+          "LCT Yeam",
+          "Bushra",
+          "LCT THUARAYA",
+          "LCT OCEAN",
+          "LCT TARFFAH",
+          "LCT Tarffah",
+          "LCT Bushra",
+          "LCT JPT",
+          "LCT THUARAY",
+          "LCT RAZAN",
+          "LCT waiting",
+          "Wind Speed",
+          "LCT THURAYA",
+          "LCT BIMA",
+          "LCT TAIBAH",
+          "LCT HOREYH",
+          "LCT TAMARA",
+          "Razan",
+          "LCT MARWAH",
+          "LCT Razan",
+          "LCT SEA",
+          "LCT JOPETWILL",
+          "TAMARA",
+          "Tamara",
+          "Marwah",
+          "Thuraya",
+          "LCT at",
+          "LCT KAWAKEEB",
+          "LCT JOPETWIL",
+          "LCT YHURAYA",
+          "LCT HOREYEH"
+        ],
+        "locations_mentioned": [
+          "JDN",
+          "AGI",
+          "TBU",
+          "SHU",
+          "MIR",
+          "MOSB",
+          "DAS"
+        ]
+      },
+      "Eddel Jose": {
+        "message_count": 233,
+        "vessels_mentioned": [],
+        "locations_mentioned": [
+          "SHU",
+          "MOSB",
+          "Mirfa"
+        ]
+      },
+      "국일 Kim": {
+        "message_count": 956,
+        "vessels_mentioned": [
+          "LCT status",
+          "Jpt62",
+          "LCT Tamara",
+          "Jopetwil 62",
+          "LCT Sea",
+          "Bushra",
+          "LCT Bushra",
+          "Capital survey equipment",
+          "offhired",
+          "LCT Bima",
+          "LCT JPTW",
+          "LCT Thuraya",
+          "LCT Wardeh",
+          "LCT sea",
+          "LCT Jopetwil",
+          "DAS-CICPA Camera",
+          "JPT 62 / AGI-Drinking water",
+          "LCT movement",
+          "Hitachi outdoor boxes",
+          "AGI-Wooden box delivery issue",
+          "LCT did",
+          "JPTW 62",
+          "Jpt71",
+          "Granite - Doors",
+          "Razan",
+          "LCT pioneer",
+          "TAMARA",
+          "Marwah",
+          "Tamara",
+          "Thuraya",
+          "Best way EQ",
+          "Jopetwil 71",
+          "LCT Marwah",
+          "LCT jewaher"
+        ],
+        "locations_mentioned": [
+          "Mirfa",
+          "AGI",
+          "SHU",
+          "MIR",
+          "MOSB",
+          "MZP",
+          "DAS",
+          "MW4"
+        ]
+      },
+      "Khemlal-SCT Logistics": {
+        "message_count": 2575,
+        "vessels_mentioned": [
+          "AGI Vessel Status_26.08.2025",
+          "AGI Backload (LCT Khayrat) Vessel Route: AGI-UAAI-MOSB",
+          "LCT Sea",
+          "AGI Vessel Status_14.09.2025",
+          "LCT Jurry",
+          "AGI Backload on LCT Aurora Scorpio,",
+          "AGI Backload_21.10.2025 (LCT Wardeh-1)",
+          "AGI Backload (LCT Jopetwil 62)_15.09.2025",
+          "AGI Backload_07.10.2025 (LCT Wardeh-1)",
+          "LCT Jopetwil",
+          "LCT Wardah",
+          "LCT Kawthar",
+          "AGI Vessel Operation Plan (04.09.2025)",
+          "AGI Backload on LCT Khayrat, ETA: 01.07.2025",
+          "AGI Vessel Operation Plan_2025.09.27",
+          "yet to",
+          "AGI Vessel Status_01.09.2025",
+          "Razan",
+          "LCT Aroura",
+          "AGI Backload_10.10.2025 (LCT Jurry)",
+          "LCT required",
+          "LCt Razan",
+          "LCT WARDEH",
+          "LCT JEWAHER",
+          "AGI Backload (LCT Kawthar-1 (06.09.2025), Vessel Route: AGI- UAAI -MOSB",
+          "AGI Backload (LCT Comarco Palma)_14.09.2025",
+          "Thuraya",
+          "AGI Backload (LCT Jopetwil 62)_11.09.2025",
+          "AGI Vessel update:",
+          "LCt Comarco",
+          "AGI Backload (LCT Sea Mullet)_01.09.2025",
+          "LCT Kawakeb",
+          "AGI Vessel Plan:",
+          "LCT Jewaher",
+          "AGI Backload (LCT Sea Parrot_30.08.2025)",
+          "LCT Sajay",
+          "Jopetwil 62",
+          "LCT was",
+          "LCT Comarco",
+          "AGI Vessel Operation Status_17.09.2025",
+          "AGI Backload_LCT Wardeh-1 (01.10.2025)",
+          "AGI Backload_09.10.2025 (LCT Sea Parrot)",
+          "AGI Backload (LCT Jewaher-1)",
+          "AGI Backload_10.10.2025 (LCT Wardeh-1)",
+          "LCT Wardeh",
+          "AGI Backload (LCT Kawakeb)_02.09.2025",
+          "LCT Khayrat",
+          "LCT wardeh",
+          "AGI Vessel Status_28.08.2025",
+          "Jopetwil 6",
+          "AGI Backload (LCT Sea Mullet)_20.09.2025",
+          "AGI Vessel Status_31.08.2025",
+          "AGI Vessel Status_02.09.2025",
+          "LCT Safeen",
+          "AGI RORO Backload (LCT Jopetwil 62)",
+          "LCT Ramp",
+          "AGI Backload on LCT Khayrat",
+          "Marwah",
+          "AGI Backload (LCT Sea Parrot)_12.09.2025",
+          "Jopetwil 71",
+          "LCT Marwah",
+          "AGI Vessel Status_24.08.2025",
+          "Jpt62",
+          "LCT Tamara",
+          "LCT Wardeh-1",
+          "AGI Vessel Plan_updated",
+          "LCT Razan-1 Update",
+          "Bushra",
+          "LCT Razan-1 Update:",
+          "LCT jopetwil",
+          "LCT Bushra",
+          "AGI Backload (LCT Jurry)-02.09.2025",
+          "LCT Thuraya",
+          "AGI Vessel Operation Plan (03.09.2025)",
+          "AGI Backload_01.10.2025 (LCT Razan-1)",
+          "LCT Allianz",
+          "AGI Backload (LCT Wardeh-1)_28.09.2025",
+          "AGI Backload on LCT Comarco Palma",
+          "AGI Vessel Operation Plan:",
+          "AGI Backload (LCT Aurora Scorpio)_22.09.2025",
+          "LCT KAWTHAR",
+          "AGI Backload (LCT Wardeh-1), Cast off to Asseifiya,",
+          "```only```",
+          "Jpt71",
+          "AGI Backload (LCT Wardeh-1)_13.09.2025",
+          "AGI Backload on LCT Sea Pioneer, 22.07.2025",
+          "LCT Aurora",
+          "The LCT Razan-1 Update:",
+          "AGI Vessel Operation Status_11.09.202",
+          "prior to shipment arrival.",
+          "AGI Backload_30.09.2025 (LCT Sea Pioneer)",
+          "AGI Vessel Status_30.08.2025",
+          "AGI Vessel operation Sequence: 1st  LCT Jopetwil 62 - 2nd  Wardeh-1 - then Razan-1",
+          "AGI Backload (LCT Pioneer Eagle)_26.09.2025",
+          "LCT RAzan",
+          "LCT J71",
+          "AGI vessel Operation Plan:",
+          "AGI Backload (LCT Comarco Palma)",
+          "LCT Yeam",
+          "AGI Backload (LCT Jewaher-1)_20.09.2025",
+          "For Information:",
+          "LCT Nasayem",
+          "AGI Backload",
+          "LCT Bima",
+          "AGI Backload_05.10.2025 (LCT Sea Parrot)",
+          "LCT Jawaher",
+          "AGI Backload (LCT Sea Mullet)_26.09.2025",
+          "AGI Backload, LCT Jewaher-1 (Vessel Route: AGI- ETTK- MOSB",
+          "LCT Sajaya",
+          "AGI Backload LCT Wardeh-1",
+          "LCT Pioneer",
+          "LCT Razan",
+          "Tamara",
+          "AGI Backload_20.10.2025 (LCT Kawthar)",
+          "Jopetwil 63",
+          "AGI Backload (LCT Sajay)",
+          "AGI Backload_03.10.2025 (LCT Wardeh-1)",
+          "AGI Backload_17.10.2025 (LCT Sea Parrot)",
+          "AGI Backload - LCT Sea Parrot  (Vessel Route: AGI - UAAI-MOSB)"
+        ],
+        "locations_mentioned": [
+          "JDN",
+          "AGI",
+          "SHU",
+          "MIR",
+          "MOSB",
+          "DAS",
+          "MW4"
+        ]
+      },
+      "Bimal": {
+        "message_count": 778,
+        "vessels_mentioned": [
+          "LCT  Bushra",
+          "tamara",
+          "Marwah",
+          "Tamara",
+          "Thuraya",
+          "LCT Tamara",
+          "LCT Bushra",
+          "LCT Senabal",
+          "Jpt71",
+          "LCT Thuraya",
+          "LCT  Thuraya",
+          "Razan",
+          "Bushra",
+          "LCT Razan",
+          "LCT OCEAN"
+        ],
+        "locations_mentioned": [
+          "TBU",
+          "DAS",
+          "MOSB",
+          "AGI"
+        ]
+      },
+      "DaN": {
+        "message_count": 345,
+        "vessels_mentioned": [
+          "Dear AGI Team,"
+        ],
+        "locations_mentioned": [
+          "MIRFA",
+          "mirfa",
+          "Mirfa",
+          "AGI",
+          "SHU",
+          "MIR",
+          "MOSB",
+          "DAS"
+        ]
+      },
+      "CHA": {
+        "message_count": 40,
+        "vessels_mentioned": [
+          " Vessel Tracking",
+          "(Updated 14:43)"
+        ],
+        "locations_mentioned": [
+          "SHU",
+          "DAS",
+          "Mirfa",
+          "mirfa"
+        ]
+      },
+      "+971 50 231 5611": {
+        "message_count": 30,
+        "vessels_mentioned": [
+          "Razan",
+          "Jopetwil 62",
+          "LCT Wardeh",
+          "LCT Jopetwil"
+        ],
+        "locations_mentioned": [
+          "DAS",
+          "AGI"
+        ]
+      },
+      "Sajid H Khan": {
+        "message_count": 622,
+        "vessels_mentioned": [
+          "AGI Backload on LCT Razan-1, Returned Back in Same Vessel",
+          "The LCT Razan-1 Entered to East Harbor @ 09:15",
+          "LCT Jewaher",
+          "Jopetwil 62",
+          "57th Batch GRM Dune Sand",
+          "AGI Backload on LCT Jopetwil-62,",
+          "LCT KAUTHAR",
+          "LCT Wardeh",
+          "LCT Jopetwil",
+          "LCT Razan-1 is Underway to AGI",
+          "Razan",
+          "LCT Razan",
+          "AGI Backload in LCT Jopetwil-62",
+          "LCT NASAYEM",
+          "LCT WARDEH",
+          "AGI Backload on LCT Jewaher-1,",
+          "Tamara",
+          "TAMARA",
+          "LCT JOPETWIL",
+          "Jopetwil 71",
+          "60th Batch GRM 20MM Aggregate",
+          "LCT Aurora",
+          "LCT KAWATHAR"
+        ],
+        "locations_mentioned": [
+          "JDN",
+          "DAS",
+          "MOSB",
+          "AGI"
+        ]
+      },
+      "Samuel": {
+        "message_count": 122,
+        "vessels_mentioned": [],
+        "locations_mentioned": [
+          "SHU"
+        ]
+      },
+      "Friday D 13th": {
+        "message_count": 26,
+        "vessels_mentioned": [
+          "Jopetwil 71"
+        ],
+        "locations_mentioned": [
+          "SHU"
+        ]
+      },
+      "Arvin": {
+        "message_count": 63,
+        "vessels_mentioned": [],
+        "locations_mentioned": [
+          "MIRFA",
+          "Mirfa",
+          "SHU",
+          "MOSB",
+          "DAS"
+        ]
+      },
+      "Jhysn": {
+        "message_count": 36,
+        "vessels_mentioned": [
+          "Thuraya"
+        ],
+        "locations_mentioned": []
+      },
+      "Nicole (SHU)": {
+        "message_count": 329,
+        "vessels_mentioned": [
+          "Road closure"
+        ],
+        "locations_mentioned": [
+          "JDN",
+          "MIRFA",
+          "mirfa",
+          "Mirfa",
+          "AGI",
+          "SHU",
+          "MIR",
+          "MOSB",
+          "DAS"
+        ]
+      },
+      "Wonderlust": {
+        "message_count": 18,
+        "vessels_mentioned": [
+          "Jopetwil 71",
+          "Jopetwil 62",
+          "Razan",
+          "LCT Jopetwil",
+          "LCT Razan"
+        ],
+        "locations_mentioned": [
+          "MOSB",
+          "AGI"
+        ]
+      },
+      "+971 56 723 6792": {
+        "message_count": 7,
+        "vessels_mentioned": [
+          "Thuraya"
+        ],
+        "locations_mentioned": []
+      },
+      "ronpap20": {
+        "message_count": 54,
+        "vessels_mentioned": [
+          "Jpt62"
+        ],
+        "locations_mentioned": [
+          "AGI"
+        ]
+      },
+      "상욱": {
+        "message_count": 1329,
+        "vessels_mentioned": [
+          "Jpt62",
+          "TAMARA",
+          "Marwah",
+          "Tamara",
+          "Thuraya",
+          "LCT  Overnight",
+          "Jopetwil 71",
+          "Jpt71",
+          "LCT BUSHRA",
+          "Jopetwil 62",
+          "Razan",
+          "Bushra"
+        ],
+        "locations_mentioned": [
+          "JDN",
+          "AGI",
+          "SHU",
+          "MIR",
+          "MOSB",
+          "MZP",
+          "DAS",
+          "MW4"
+        ]
+      },
+      "Karthi": {
+        "message_count": 2,
+        "vessels_mentioned": [],
+        "locations_mentioned": []
+      },
+      "+971 50 689 0538": {
+        "message_count": 79,
+        "vessels_mentioned": [],
+        "locations_mentioned": [
+          "MIRFA",
+          "MOSB",
+          "SHU",
+          "mirfa"
+        ]
+      },
+      "+971 56 577 3227": {
+        "message_count": 6,
+        "vessels_mentioned": [
+          "Jopetwil 71"
+        ],
+        "locations_mentioned": []
+      },
+      "+971 50 297 2631": {
+        "message_count": 28,
+        "vessels_mentioned": [],
+        "locations_mentioned": []
+      }
+    }
+  }
+}

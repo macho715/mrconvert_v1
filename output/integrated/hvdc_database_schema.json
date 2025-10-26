@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2025-10-23T01:06:54.810765",
+  "description": "HVDC 통합 데이터베이스 스키마",
+  "tables": {
+    "metadata": {
+      "description": "데이터베이스 메타데이터",
+      "fields": {
+        "generated_at": "ISO 8601 timestamp",
+        "version": "string",
+        "source_files": "array of strings",
+        "total_records": "integer",
+        "documentation": "object"
+      }
+    },
+    "lane_mapping": {
+      "description": "운송 경로 매핑 데이터",
+      "fields": {
+        "approved_lanes": "array",
+        "od_mapping": "array",
+        "full_dump": "string"
+      }
+    },
+    "rates": {
+      "description": "요금 데이터",
+      "fields": {
+        "invoice_reference": "object",
+        "inland_trucking": "array",
+        "air_cargo": "array",
+        "container_cargo": "array",
+        "contract_rates": "string"
+      }
+    },
+    "prism_kernel": {
+      "description": "PRISM 커널 정보",
+      "fields": {
+        "readme": "string",
+        "version": "string"
+      }
+    },
+    "system_documentation": {
+      "description": "시스템 문서",
+      "fields": {
+        "architecture": "string",
+        "configuration_guide": "string",
+        "user_guide": "string"
+      }
+    }
+  }
+}

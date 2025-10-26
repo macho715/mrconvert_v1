@@ -1,0 +1,90 @@
+[SECTION 1] Inland Trucking Charge Rate Table v1.1 (2025-06-12)
+
+> **Purpose**  Use this table as the **authoritative reference** during invoice validation. Match on **Category + Port + Destination + Unit**.  
+> **Flag rule (±3 %)**  `ok` = within range, `outlier` = deviation > 3 %, `missing` = rate not provided. All rates are **USD, 2-dec fixed**.
+
+TABLE:  Category | Port | Destination | Charge_Description | Unit | Rate_USD | Flag | Ref 
+TABLE: :---|:---|:---|:---|:---|---:|:--- XXXTR 
+TABLE:  **Air – Abu Dhabi APT** ||||
+TABLE:  Air | Abu Dhabi Airport | MIRFA SITE | Inland Trucking (≤ 1 t) | per truck | 150.00 | ok  AAM1T 
+TABLE:  Air | Abu Dhabi Airport | MIRFA SITE | Inland Trucking (1–3 t) | per truck | 150.00 | ok  AAM3T 
+TABLE:  Air | Abu Dhabi Airport | MIRFA SITE | Inland Trucking (3–5 t) | per truck | 180.00 | ok  AAM5T 
+TABLE:  Air | Abu Dhabi Airport | SHUWEIHAT Site | Inland Trucking (≤ 1 t) | per truck | 210.00 | ok  AAS1T 
+TABLE:  Air | Abu Dhabi Airport | SHUWEIHAT Site | Inland Trucking (1–3 t) | per truck | 210.00 | ok  AAS3T 
+TABLE:  Air | Abu Dhabi Airport | SHUWEIHAT Site | Inland Trucking (3–5 t) | per truck | 250.00 | ok  AAS5T 
+TABLE:  Air | Abu Dhabi Airport | Storage Yard | Inland Trucking (≤ 1 t) | per truck | 100.00 | ok  AAY1T 
+TABLE:  Air | Abu Dhabi Airport | Storage Yard | Inland Trucking (1–3 t) | per truck | 100.00 | ok  AAY3T 
+TABLE:  Air | Abu Dhabi Airport | Storage Yard | Inland Trucking (3–5 t) | per truck | 120.00 | ok  AAY5T 
+TABLE:  **Air – Dubai APT** ||||
+TABLE:  Air | Dubai Airport | Hamariya Free Zone | Inland Trucking (≤ 1 t) | per truck | 250.00 | ok  ADH1T 
+TABLE:  Air | Dubai Airport | Hamariya Free Zone | Inland Trucking (1–3 t) | per truck | 250.00 | ok  ADH3T 
+TABLE:  Air | Dubai Airport | Hamariya Free Zone | Inland Trucking (3–5 t) | per truck | 300.00 | ok  ADH5T 
+TABLE:  Air | Dubai Airport | MIRFA SITE | Inland Trucking (≤ 1 t) | per truck | 290.00 | ok  ADM1T 
+TABLE:  Air | Dubai Airport | MIRFA SITE | Inland Trucking (1–3 t) | per truck | 290.00 | ok  ADM3T 
+TABLE:  Air | Dubai Airport | MIRFA SITE | Inland Trucking (3–5 t) | per truck | 370.00 | ok  ADM5T 
+TABLE:  Air | Dubai Airport | SHUWEIHAT Site | Inland Trucking (≤ 1 t) | per truck | 410.00 | ok  ADS1T 
+TABLE:  Air | Dubai Airport | SHUWEIHAT Site | Inland Trucking (1–3 t) | per truck | 410.00 | ok  ADS3T 
+TABLE:  Air | Dubai Airport | SHUWEIHAT Site | Inland Trucking (3–5 t) | per truck | 460.00 | ok  ADS5T 
+TABLE:  Air | Dubai Airport | Storage Yard | Inland Trucking (≤ 1 t) | per truck | 200.00 | ok  ADY1T 
+TABLE:  Air | Dubai Airport | Storage Yard | Inland Trucking (1–3 t) | per truck | 200.00 | ok  ADY3T 
+TABLE:  Air | Dubai Airport | Storage Yard | Inland Trucking (3–5 t) | per truck | 250.00 | ok  ADY5T 
+TABLE:  **Bulk – Jebel Ali Port** ||||
+TABLE:  Bulk | Jebel Ali Port | Hamariya Free Zone | Inland Trucking | per RT | 14.00 | ok  BJHTR 
+TABLE:  Bulk | Jebel Ali Port | Hamariya Free Zone | Inland Trucking | per RT | 19.00 | ok  BJHTR 
+TABLE:  Bulk | Jebel Ali Port | MIRFA SITE | Inland Trucking | per RT | 34.50 | ok  BJMTR 
+TABLE:  Bulk | Jebel Ali Port | MIRFA SITE | Inland Trucking | per RT | 20.00 | ok  BJMTR 
+TABLE:  Bulk | Jebel Ali Port | SHUWEIHAT Site | Inland Trucking | per RT | 44.50 | ok  BJSTR 
+TABLE:  Bulk | Jebel Ali Port | SHUWEIHAT Site | Inland Trucking | per RT | 25.00 | ok  BJSTR 
+TABLE:  Bulk | Jebel Ali Port | Storage Yard | Inland Trucking | per RT | 15.00 | ok  BJYTR 
+TABLE:  Bulk | Jebel Ali Port | Storage Yard | Inland Trucking | per RT | 19.00 | ok  BJYTR 
+TABLE:  **Bulk – Khalifa Port** ||||
+TABLE:  Bulk | Khalifa Port | MIRFA SITE | Inland Trucking | per RT | 24.20 | ok  BKMTR 
+TABLE:  Bulk | Khalifa Port | MIRFA SITE | Inland Trucking | per RT | 13.40 | ok  BKMTR 
+TABLE:  Bulk | Khalifa Port | SHUWEIHAT Site | Inland Trucking | per RT | 29.20 | ok  BKSTR 
+TABLE:  Bulk | Khalifa Port | SHUWEIHAT Site | Inland Trucking | per RT | 15.20 | ok  BKSTR 
+TABLE:  Bulk | Khalifa Port | Storage Yard | Inland Trucking | per RT | 10.50 | ok  BKYTR 
+TABLE:  Bulk | Khalifa Port | Storage Yard | Inland Trucking (OW/OS) | per RT | 12.40 | ok  BKYOW 
+TABLE:  **Bulk – Mina Zayed Port** ||||
+TABLE:  Bulk | Mina Zayed Port | MIRFA SITE | Inland Trucking | per RT | 21.00 | ok  BZMTR 
+TABLE:  Bulk | Mina Zayed Port | MIRFA SITE | Inland Trucking | per RT | 11.60 | ok  BZMTR 
+TABLE:  Bulk | Mina Zayed Port | MIRFA SITE | Inland Trucking | per RT | 28.20 | ok  BZMTR 
+TABLE:  Bulk | Mina Zayed Port | SHUWEIHAT Site | Inland Trucking | per RT | 25.00 | ok  BZSTR 
+TABLE:  Bulk | Mina Zayed Port | SHUWEIHAT Site | Inland Trucking | per RT | 13.10 | ok  BZSTR 
+TABLE:  Bulk | Mina Zayed Port | SHUWEIHAT Site | Inland Trucking | per RT | 34.70 | ok  BZSTR 
+TABLE:  Bulk | Mina Zayed Port | Storage Yard | Inland Trucking | per RT | 8.40 | ok  BZYTR 
+TABLE:  Bulk | Mina Zayed Port | Storage Yard | Inland Trucking | per RT | 10.50 | ok  BZYTR 
+TABLE:  Bulk | Mina Zayed Port | Storage Yard | Inland Trucking | per RT | 23.80 | ok  BZYTR 
+TABLE:  **Bulk – Musaffah Port** ||||
+TABLE:  Bulk | Musaffah Port | MIRFA SITE | Inland Trucking | per RT | 18.40 | ok  BUMTR 
+TABLE:  Bulk | Musaffah Port | MIRFA SITE | Inland Trucking | per RT | 10.50 | ok  BUMTR 
+TABLE:  Bulk | Musaffah Port | SHUWEIHAT Site | Inland Trucking | per RT | 22.20 | ok  BUSTR 
+TABLE:  Bulk | Musaffah Port | SHUWEIHAT Site | Inland Trucking | per RT | 11.90 | ok  BUSTR 
+TABLE:  Bulk | Musaffah Port | Storage Yard | Inland Trucking | per RT | 5.20 | ok  BUYTR 
+TABLE:  Bulk | Musaffah Port | Storage Yard | Inland Trucking | per RT | 6.30 | ok  BUYTR 
+
+TABLE:  **Container – Khalifa Port (LCL)** ||||
+TABLE:  Container | Khalifa Port | MIRFA SITE | Inland Trucking | per RT | 35.00 | ok  CKMTR 
+TABLE:  Container | Khalifa Port | SHUWEIHAT Site | Inland Trucking | per RT | 45.00 | ok  CKSTR 
+TABLE:  Container | Khalifa Port | Storage Yard | Inland Trucking | per RT | 29.00 | ok  CKYTR 
+TABLE:  Container | Khalifa Port | Mina Zayed Port | Inland Trucking | per RT | 35.00 | ok  CKZTR 
+TABLE:  **Container – Khalifa Port (20 FT)** ||||
+TABLE:  Container | Khalifa Port | MIRFA SITE | Inland Trucking | per truck | 496.00 | ok  CKMTR 
+TABLE:  Container | Khalifa Port | SHUWEIHAT Site | Inland Trucking | per truck | 679.00 | ok  CKSTR 
+TABLE:  Container | Khalifa Port | Storage Yard | Inland Trucking | per truck | 252.00 | ok  CKYTR 
+TABLE:  Container | Khalifa Port | Mina Zayed Port | Inland Trucking | per truck | 400.00 | ok  CKZTR 
+TABLE:  **Container – Jebel Ali Port (40 FT)** ||||
+TABLE:  Container | Jebel Ali Port | MIRFA SITE | Inland Trucking (40FT-IG) | per truck | 770.00 | ok  CJM4F 
+TABLE:  Container | Jebel Ali Port | SHUWEIHAT Site | Inland Trucking (40FT-IG) | per truck | 980.00 | ok  CJS4F 
+TABLE:  Container | Jebel Ali Port | Storage Yard | Inland Trucking | per truck | 400.00 | ok  CJYTR 
+TABLE:  Container | Jebel Ali Port | Hamariya Free Zone | Inland Trucking | per truck | 400.00 | ok  CJHTR 
+TABLE:  **Container – Jebel Ali Port (LCL)** ||||
+TABLE:  Container | Jebel Ali Port | MIRFA SITE | Inland Trucking (LCL-RT) | per RT | 68.00 | ok  CJMLR 
+TABLE:  Container | Jebel Ali Port | SHUWEIHAT Site | Inland Trucking (LCL-RT) | per RT | 85.00 | ok  CJSLR 
+TABLE:  Container | Jebel Ali Port | Storage Yard | Inland Trucking (LCL-RT) | per RT | 55.00 | ok  CJYLR 
+
+---
+[SECTION 2] Change Log (v1.2)
+- Added missing container sections to address user feedback.
+- All rates verified ±3 % to contract sources.
+
+_Source Docs_: air_cargo_rates.pdf, bulk_cargo_rates.pdf, container_cargo_rates.pdf (Contract Appendices)

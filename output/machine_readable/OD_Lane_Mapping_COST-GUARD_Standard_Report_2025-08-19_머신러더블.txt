@@ -1,0 +1,104 @@
+
+[SECTION 1] O/D Lane Mapping × COST-GUARD 통합 표준화 보고서 (2025-08-19, Asia/Dubai)
+*(End-to-end lane mapping with rate & distance; unified Δ% bands for invoice guardrails)*
+
+[SECTION 2] 1) Executive Summary
+- **산출물 일괄 재구축 완료.** 승인 이력 기반 **O/D×차량 레인 지도**, **요율·거리 통계**, **유사도 관계도**, **COST-GUARD Δ% 밴드**까지 단일 체계로 표준화.  
+- **REF_MISSING 대폭 축소:** 초기 86/86 → **39/86(−47, −54.65%)**. 남은 39건은 표준 레퍼런스 목적지/단위 부재 구간.  
+- **스코어링 규칙(유사도):** Origin 0.35 + Destination 0.35 + Vehicle 0.10 + Distance 0.10(≤15km 감쇠) + Rate 0.10(±30% 감쇠). **임계치 0.60** 이상만 엣지 생성.  
+- **COST-GUARD 밴드:** Δ≤2.00% PASS / 2.01–5.00% WARN / 5.01–10.00% HIGH / >10.00% CRITICAL. (FX 고정: **1 USD = 3.6725 AED**; 원본 USD 유지)  
+- **정규화 강화:** Mussafah 클러스터(DSV Yard/Markaz/M44/Prestige/AAA/AGI→Storage Yard), MIRFA SITE, SHUWEIHAT Site, Mina Zayed Port, Hamriyah Free Zone 등 **Canonical 매핑** 반영.
+
+[SECTION 3] 2) Visual-first (핵심 파일 & 링크)
+- **통합 엑셀(최신):** [REF: mapping_update_20250819.xlsx]  
+  - `ApprovedLaneMap` — 레인별 **median/mean/p25/p75 Rate & Distance**  
+  - `Mapping_OD_Rate` — O/D 매핑 표(요율·거리 포함)  
+  - `Lane_Nodes_OD`, `Lane_Similarity_Edges` — 유사도 그래프용 노드·엣지  
+  - `COST_GUARD_Standardized` — **ref_rate_usd·Δ%·밴드** 포함 표준화  
+  - `Unified_OD_Mapping_CG` — **단일 표(Δ% 밴드까지)**  
+  - `RefDestinationMap` — **현재명→Canonical** 사전(운영 반영 권고)  
+- **관계도 PNG:** 네트워크 [REF: graph] · 상위노드 [REF: heatmap]  
+- **분포 PNG:** 레인별 **Rate vs Distance** [REF: scatter]
+
+[SECTION 4] 요약 표 (샘플 컬럼)
+TABLE:  Key | Description 
+TABLE:  origin, destination, vehicle, unit | 정규화된 O/D, 차량, 단위(per truck/RT) 
+TABLE:  median_rate_usd / median_distance_km | 레인 중앙값 요율/거리 
+TABLE:  ref_rate_usd | COST-GUARD 표준요율(조인 성공 시) 
+TABLE:  delta_pct / cg_band | Δ% 및 밴드(PASS/WARN/HIGH/CRITICAL) 
+TABLE:  rate_bucket / distance_bucket | 분위/구간 버킷(분포 파악) 
+
+[SECTION 5] 3) Options (개선·튜닝)
+1) **정규화 사전 보강(RefDestinationMap 운영 반영)**  
+   - Pros: REF_MISSING 추가 축소, 재현성↑  
+   - Cons: 운용·승인 필요  
+   - Cost/Risk/Time: 0 / Low / **즉시**  
+2) **per RT ↔ per truck 환산룰 도입(컨/벌크 변환계수)**  
+   - Pros: 단위 불일치 구간 자동 매칭  
+   - Cons: 계수 합의 필요(톤·적재정책)  
+   - 0.5d 설계 / Low / **단기**  
+3) **임계치·가중치 튜닝(0.55/0.60/0.65, Dist/Rate 0.10→0.15)**  
+   - Pros: 신규 레인 제안 민감도 최적화  
+   - Cons: 엣지 과밀/희소 트레이드오프  
+   - 0 / Low / **즉시**  
+
+[SECTION 6] 4) Roadmap (Prepare→Pilot→Build→Operate→Scale + KPI)
+- **Prepare:** `RefDestinationMap`를 **NormalizationMap**에 합침(운영 사전). Owner: Ops/Logi, 2일.  
+- **Pilot:** 최근월 배치로 임계치 0.55/0.60/0.65 A/B. KPI: REF_MISSING ≤20.00%, High/Critical 검출정확도 ≥95.00%.  
+- **Build:** `/switch_mode LATTICE + /logi-master invoice-audit --deep`에 **Lane Join & Δ% 밴드** 자동 삽입.  
+- **Operate:** 신규 청구 접수 시 **Top-3 유사 레인 추천** + Δ% 즉시 판정(PASS/WARN/HIGH/CRITICAL).  
+- **Scale:** 월별 스냅샷 보관, **관계도 변화(신규/단절)** 알림. KPI: 자동화 ≥94.00%, 검증정확도 ≥97.00%.
+
+[SECTION 7] 5) Automation Notes (RPA/LLM/Sheets/TG)
+- **Auto-Trigger:** 인보이스 감지 → `/switch_mode COST-GUARD + /logi-master invoice-audit`  
+  1) O/D 정규화 → `Mapping_OD_Rate` 조회  
+  2) **ref_rate_usd 조인 → Δ%·밴드 산출**  
+  3) **PASS/FAIL** 표(아이템별) 생성 + TG #invoice-redflag 알림(High/Cr.)  
+- **FX 정책:** **1 USD = 3.6725 AED** 고정(환산 필요 시 병렬 표기).  
+- **PII/감사:** 토큰-레벨 PII Mask + 블록체인 해시(문서 일치성은 별도 파이프라인 유지).
+
+[SECTION 8] 6) Data Dictionary (필수 열)
+- **ApprovedLaneMap / Mapping_OD_Rate**  
+  - `samples`: 승인 요율 표본 수(정규화 후)  
+  - `median/mean/p25/p75_rate_usd` (소수 2자리), `…_distance_km`  
+  - `lane_id`(“O→D [VEH]”), `alias`(L1…Ln), `rate_bucket`, `distance_bucket`  
+- **COST_GUARD_Standardized / Unified_OD_Mapping_CG**  
+  - `ref_rate_usd`(표준), `delta_pct`(**(median−ref)/ref×100**), `cg_band`(밴드)  
+  - `category/port_for_join/port`(조인 메타), `destination_for_join`(Canonical)  
+
+[SECTION 9] 7) 운영 규칙(핵심 로직)
+- **유사도 스코어:** O 0.35 + D 0.35 + V 0.10 + Dist 0.10(≤15km) + Rate 0.10(±30%). **≥0.60**만 유효 엣지.  
+- **COST-GUARD 밴드:** Δ≤2.00 PASS / ≤5.00 WARN / ≤10.00 HIGH / >10.00 CRITICAL.  
+- **Canonical 매핑:**  
+  - Mussafah 계열 → Storage Yard, MIRFA → MIRFA SITE, Shuweihat → SHUWEIHAT Site, Mina Zayed 계열 → Mina Zayed Port, Hamriyah → Hamariya FZ, Sharjah.  
+- **Port 추론:** per truck & {MIRFA/SHUWEIHAT/Storage Yard} → 우선 Khalifa Port; Mussafah 클러스터 → Musaffah Port; 서부지역 → Mina Zayed Port.
+
+[SECTION 10] 8) 현황 지표(절대일 기준 2025-08-19)
+- 총 레인(정규화 후): **86.00**  
+- **REF_MISSING:** **39.00/86.00 (45.35%)**  
+- 개선폭: **−47.00 (−54.65%)**  
+- 파일/시각화: 엑셀 1, PNG 3 (**링크 상단 참조**)
+
+[SECTION 11] 9) Review
+- **반례(어떤 조건에서 깨지나):** 표준 레퍼런스가 per RT만 보유, 실제 승인 단위가 per truck인 경우 **Δ% 왜곡** 가능. (해결: 단위 환산룰 확정)  
+- **가정:** (i) 승인 요율은 이상치 제거 없이 중앙값 사용, (ii) Canonical 규칙은 현장 합의 전 임시 운영 기준, (iii) 환율 고정(1 USD = 3.6725 AED).  
+- **한계:** 레퍼런스에 목적지/포트·단위 조합이 없으면 REF_MISSING 잔존. 고정계수 없는 단위 환산은 보수 조인만 수행.
+
+[SECTION 12] 10) QA Checklist
+- [ ] `RefDestinationMap`의 will_change=TRUE 항목을 운영 사전에 병합했는가?  
+- [ ] `Unified_OD_Mapping_CG`에서 cg_band=HIGH/CRITICAL 케이스 표본검증(증빙) 완료?  
+- [ ] 임계치(0.60)·가중치 변경 시 관계도 과밀/희소 여부 점검?  
+- [ ] FX/통화 표기는 USD 기준(필요 시 AED 병기) 일관 유지?
+
+[SECTION 13] 11) Command Recap
+- `/switch_mode LATTICE + /logi-master invoice-audit --deep` — **정합성+Δ% 밴드 자동**  
+- `/switch_mode COST-GUARD + /logi-master invoice-audit` — **PASS/FAIL 결과표**  
+- `/logi-master report --KRsummary` — 경영 요약 리포트 생성  
+
+---
+
+[SECTION 14] Changelog (2025-08-19)
+- `rate_usd_` 컬럼 인식 추가 → 레인 통계 재계산  
+- Canonical 목적지·포트추론 재설계 → 조인 성공률 향상  
+- `Unified_OD_Mapping_CG` 단일 표 생성(Δ%·밴드 포함)  
+- REF_MISSING 86→**39**로 감소(−54.65%)

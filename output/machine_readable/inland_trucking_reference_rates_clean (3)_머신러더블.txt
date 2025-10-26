@@ -1,0 +1,563 @@
+JSON_DATA: inland_trucking_reference_rates_clean (3).json
+GENERATED_AT: 2025-10-23T01:06:54.794598
+
+dataset: inland_trucking_reference_rates_clean
+generated_at: 2025-08-12T19:54:06.203657
+currency_policy:
+  base: USD
+  fixed_fx:
+    USD_AED: 3.6725
+validation_rules:
+  layer1_contract_tolerance: 0.03
+  autofail_threshold: 0.15
+records:
+  [0]:
+    category: Air
+    port: Abu Dhabi Airport
+    destination: MIRFA SITE
+    unit: per truck
+    charge_description: Inland Trucking (Above 1ton, Upto 3ton)
+    rate:
+      amount: 150.0
+      currency: USD
+      tolerance: 0.03
+    flag: outlier
+  [1]:
+    category: Air
+    port: Abu Dhabi Airport
+    destination: MIRFA SITE
+    unit: per truck
+    charge_description: Inland Trucking (Above 3ton, Upto 5ton)
+    rate:
+      amount: 180.0
+      currency: USD
+      tolerance: 0.03
+    flag: ok
+  [2]:
+    category: Air
+    port: Abu Dhabi Airport
+    destination: MIRFA SITE
+    unit: per truck
+    charge_description: Inland Trucking (Upto 1ton)
+    rate:
+      amount: 150.0
+      currency: USD
+      tolerance: 0.03
+    flag: outlier
+  [3]:
+    category: Air
+    port: Abu Dhabi Airport
+    destination: SHUWEIHAT Site
+    unit: per truck
+    charge_description: Inland Trucking (Above 1ton, Upto 3ton)
+    rate:
+      amount: 210.0
+      currency: USD
+      tolerance: 0.03
+    flag: ok
+  [4]:
+    category: Air
+    port: Abu Dhabi Airport
+    destination: SHUWEIHAT Site
+    unit: per truck
+    charge_description: Inland Trucking (Above 3ton, Upto 5ton)
+    rate:
+      amount: 250.0
+      currency: USD
+      tolerance: 0.03
+    flag: ok
+  [5]:
+    category: Air
+    port: Abu Dhabi Airport
+    destination: SHUWEIHAT Site
+    unit: per truck
+    charge_description: Inland Trucking (Upto 1ton)
+    rate:
+      amount: 210.0
+      currency: USD
+      tolerance: 0.03
+    flag: ok
+  [6]:
+    category: Air
+    port: Abu Dhabi Airport
+    destination: Storage Yard
+    unit: per truck
+    charge_description: Inland Trucking (Above 1ton, Upto 3ton)
+    rate:
+      amount: 100.0
+      currency: USD
+      tolerance: 0.03
+    flag: outlier
+  [7]:
+    category: Air
+    port: Abu Dhabi Airport
+    destination: Storage Yard
+    unit: per truck
+    charge_description: Inland Trucking (Above 3ton, Upto 5ton)
+    rate:
+      amount: 120.0
+      currency: USD
+      tolerance: 0.03
+    flag: outlier
+  [8]:
+    category: Air
+    port: Abu Dhabi Airport
+    destination: Storage Yard
+    unit: per truck
+    charge_description: Inland Trucking (Upto 1ton)
+    rate:
+      amount: 100.0
+      currency: USD
+      tolerance: 0.03
+    flag: outlier
+  [9]:
+    category: Air
+    port: Dubai Airport
+    destination: Hamariya free zone, Sharjah
+    unit: per truck
+    charge_description: Inland Trucking (Above 1ton, Upto 3ton)
+    rate:
+      amount: 250.0
+      currency: USD
+      tolerance: 0.03
+    flag: ok
+  [10]:
+    category: Air
+    port: Dubai Airport
+    destination: Hamariya free zone, Sharjah
+    unit: per truck
+    charge_description: Inland Trucking (Above 3ton, Upto 5ton)
+    rate:
+      amount: 300.0
+      currency: USD
+      tolerance: 0.03
+    flag: ok
+  [11]:
+    category: Air
+    port: Dubai Airport
+    destination: Hamariya free zone, Sharjah
+    unit: per truck
+    charge_description: Inland Trucking (Upto 1ton)
+    rate:
+      amount: 250.0
+      currency: USD
+      tolerance: 0.03
+    flag: ok
+  [12]:
+    category: Air
+    port: Dubai Airport
+    destination: MIRFA SITE
+    unit: per truck
+    charge_description: Inland Trucking (Above 1ton, Upto 3ton)
+    rate:
+      amount: 290.0
+      currency: USD
+      tolerance: 0.03
+    flag: ok
+  [13]:
+    category: Air
+    port: Dubai Airport
+    destination: MIRFA SITE
+    unit: per truck
+    charge_description: Inland Trucking (Above 3ton, Upto 5ton)
+    rate:
+      amount: 370.0
+      currency: USD
+      tolerance: 0.03
+    flag: outlier
+  [14]:
+    category: Air
+    port: Dubai Airport
+    destination: MIRFA SITE
+    unit: per truck
+    charge_description: Inland Trucking (Upto 1ton)
+    rate:
+      amount: 290.0
+      currency: USD
+      tolerance: 0.03
+    flag: ok
+  [15]:
+    category: Air
+    port: Dubai Airport
+    destination: SHUWEIHAT Site
+    unit: per truck
+    charge_description: Inland Trucking (Above 1ton, Upto 3ton)
+    rate:
+      amount: 410.0
+      currency: USD
+      tolerance: 0.03
+    flag: outlier
+  [16]:
+    category: Air
+    port: Dubai Airport
+    destination: SHUWEIHAT Site
+    unit: per truck
+    charge_description: Inland Trucking (Above 3ton, Upto 5ton)
+    rate:
+      amount: 460.0
+      currency: USD
+      tolerance: 0.03
+    flag: outlier
+  [17]:
+    category: Air
+    port: Dubai Airport
+    destination: SHUWEIHAT Site
+    unit: per truck
+    charge_description: Inland Trucking (Upto 1ton)
+    rate:
+      amount: 410.0
+      currency: USD
+      tolerance: 0.03
+    flag: outlier
+  [18]:
+    category: Air
+    port: Dubai Airport
+    destination: Storage Yard
+    unit: per truck
+    charge_description: Inland Trucking (Above 1ton, Upto 3ton)
+    rate:
+      amount: 200.0
+      currency: USD
+      tolerance: 0.03
+    flag: ok
+  [19]:
+    category: Air
+    port: Dubai Airport
+    destination: Storage Yard
+    unit: per truck
+    charge_description: Inland Trucking (Above 3ton, Upto 5ton)
+    rate:
+      amount: 250.0
+      currency: USD
+      tolerance: 0.03
+    flag: ok
+  [20]:
+    category: Air
+    port: Dubai Airport
+    destination: Storage Yard
+    unit: per truck
+    charge_description: Inland Trucking (Upto 1ton)
+    rate:
+      amount: 200.0
+      currency: USD
+      tolerance: 0.03
+    flag: ok
+  [21]:
+    category: Bulk
+    port: Jebel Ali Port
+    destination: Hamariya free zone, Sharjah
+    unit: per RT
+    charge_description: Inland Trucking
+    rate:
+      amount: 14.0
+      currency: USD
+      tolerance: 0.03
+    flag: ok
+  [22]:
+    category: Bulk
+    port: Jebel Ali Port
+    destination: MIRFA SITE
+    unit: per RT
+    charge_description: Inland Trucking
+    rate:
+      amount: 20.0
+      currency: USD
+      tolerance: 0.03
+    flag: ok
+  [23]:
+    category: Bulk
+    port: Jebel Ali Port
+    destination: SHUWEIHAT Site
+    unit: per RT
+    charge_description: Inland Trucking
+    rate:
+      amount: 25.0
+      currency: USD
+      tolerance: 0.03
+    flag: outlier
+  [24]:
+    category: Bulk
+    port: Jebel Ali Port
+    destination: Storage Yard
+    unit: per RT
+    charge_description: Inland Trucking
+    rate:
+      amount: 15.0
+      currency: USD
+      tolerance: 0.03
+    flag: ok
+  [25]:
+    category: Bulk
+    port: Khalifa Port
+    destination: MIRFA SITE
+    unit: per RT
+    charge_description: Inland Trucking
+    rate:
+      amount: 13.4
+      currency: USD
+      tolerance: 0.03
+    flag: ok
+  [26]:
+    category: Bulk
+    port: Khalifa Port
+    destination: SHUWEIHAT Site
+    unit: per RT
+    charge_description: Inland Trucking
+    rate:
+      amount: 15.2
+      currency: USD
+      tolerance: 0.03
+    flag: ok
+  [27]:
+    category: Bulk
+    port: Khalifa Port
+    destination: Storage Yard
+    unit: per RT
+    charge_description: Inland Trucking
+    rate:
+      amount: 10.5
+      currency: USD
+      tolerance: 0.03
+    flag: outlier
+  [28]:
+    category: Bulk
+    port: Mina Zayed Port
+    destination: MIRFA SITE
+    unit: per RT
+    charge_description: Inland Trucking
+    rate:
+      amount: 21.0
+      currency: USD
+      tolerance: 0.03
+    flag: ok
+  [29]:
+    category: Bulk
+    port: Mina Zayed Port
+    destination: SHUWEIHAT Site
+    unit: per RT
+    charge_description: Inland Trucking
+    rate:
+      amount: 13.1
+      currency: USD
+      tolerance: 0.03
+    flag: ok
+  [30]:
+    category: Bulk
+    port: Mina Zayed Port
+    destination: Storage Yard
+    unit: per RT
+    charge_description: Inland Trucking
+    rate:
+      amount: 23.8
+      currency: USD
+      tolerance: 0.03
+    flag: ok
+  [31]:
+    category: Bulk
+    port: Musaffah Port
+    destination: MIRFA SITE
+    unit: per RT
+    charge_description: Inland Trucking
+    rate:
+      amount: 18.4
+      currency: USD
+      tolerance: 0.03
+    flag: ok
+  [32]:
+    category: Bulk
+    port: Musaffah Port
+    destination: SHUWEIHAT Site
+    unit: per RT
+    charge_description: Inland Trucking
+    rate:
+      amount: 22.2
+      currency: USD
+      tolerance: 0.03
+    flag: ok
+  [33]:
+    category: Bulk
+    port: Musaffah Port
+    destination: Storage Yard
+    unit: per RT
+    charge_description: Inland Trucking
+    rate:
+      amount: 5.2
+      currency: USD
+      tolerance: 0.03
+    flag: outlier
+  [34]:
+    category: Container
+    port: Jebel Ali Port
+    destination: Hamariya free zone, Sharjah
+    unit: per RT
+    charge_description: Inland Trucking
+    rate:
+      amount: 55.0
+      currency: USD
+      tolerance: 0.03
+    flag: outlier
+  [35]:
+    category: Container
+    port: Jebel Ali Port
+    destination: Hamariya free zone, Sharjah
+    unit: per truck
+    charge_description: Inland Trucking
+    rate:
+      amount: 400.0
+      currency: USD
+      tolerance: 0.03
+    flag: ok
+  [36]:
+    category: Container
+    port: Jebel Ali Port
+    destination: MIRFA SITE
+    unit: per RT
+    charge_description: Inland Trucking
+    rate:
+      amount: 68.0
+      currency: USD
+      tolerance: 0.03
+    flag: outlier
+  [37]:
+    category: Container
+    port: Jebel Ali Port
+    destination: MIRFA SITE
+    unit: per truck
+    charge_description: Inland Trucking
+    rate:
+      amount: 770.0
+      currency: USD
+      tolerance: 0.03
+    flag: outlier
+  [38]:
+    category: Container
+    port: Jebel Ali Port
+    destination: SHUWEIHAT Site
+    unit: per RT
+    charge_description: Inland Trucking
+    rate:
+      amount: 85.0
+      currency: USD
+      tolerance: 0.03
+    flag: outlier
+  [39]:
+    category: Container
+    port: Jebel Ali Port
+    destination: SHUWEIHAT Site
+    unit: per truck
+    charge_description: Inland Trucking
+    rate:
+      amount: 980.0
+      currency: USD
+      tolerance: 0.03
+    flag: outlier
+  [40]:
+    category: Container
+    port: Jebel Ali Port
+    destination: Storage Yard
+    unit: per RT
+    charge_description: Inland Trucking
+    rate:
+      amount: 55.0
+      currency: USD
+      tolerance: 0.03
+    flag: outlier
+  [41]:
+    category: Container
+    port: Jebel Ali Port
+    destination: Storage Yard
+    unit: per truck
+    charge_description: Inland Trucking
+    rate:
+      amount: 400.0
+      currency: USD
+      tolerance: 0.03
+    flag: ok
+  [42]:
+    category: Container
+    port: Khalifa Port
+    destination: MIRFA SITE
+    unit: per RT
+    charge_description: Inland Trucking
+    rate:
+      amount: 35.0
+      currency: USD
+      tolerance: 0.03
+    flag: outlier
+  [43]:
+    category: Container
+    port: Khalifa Port
+    destination: MIRFA SITE
+    unit: per truck
+    charge_description: Inland Trucking
+    rate:
+      amount: 496.0
+      currency: USD
+      tolerance: 0.03
+    flag: ok
+  [44]:
+    category: Container
+    port: Khalifa Port
+    destination: Mina Zayed Port
+    unit: per RT
+    charge_description: Inland Trucking
+    rate:
+      amount: 35.0
+      currency: USD
+      tolerance: 0.03
+    flag: outlier
+  [45]:
+    category: Container
+    port: Khalifa Port
+    destination: Mina Zayed Port
+    unit: per truck
+    charge_description: Inland Trucking
+    rate:
+      amount: 400.0
+      currency: USD
+      tolerance: 0.03
+    flag: ok
+  [46]:
+    category: Container
+    port: Khalifa Port
+    destination: SHUWEIHAT Site
+    unit: per RT
+    charge_description: Inland Trucking
+    rate:
+      amount: 45.0
+      currency: USD
+      tolerance: 0.03
+    flag: outlier
+  [47]:
+    category: Container
+    port: Khalifa Port
+    destination: SHUWEIHAT Site
+    unit: per truck
+    charge_description: Inland Trucking
+    rate:
+      amount: 679.0
+      currency: USD
+      tolerance: 0.03
+    flag: outlier
+  [48]:
+    category: Container
+    port: Khalifa Port
+    destination: Storage Yard
+    unit: per RT
+    charge_description: Inland Trucking
+    rate:
+      amount: 29.0
+      currency: USD
+      tolerance: 0.03
+    flag: outlier
+  [49]:
+    category: Container
+    port: Khalifa Port
+    destination: Storage Yard
+    unit: per truck
+    charge_description: Inland Trucking
+    rate:
+      amount: 252.0
+      currency: USD
+      tolerance: 0.03
+    flag: outlier

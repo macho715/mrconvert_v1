@@ -1,0 +1,55 @@
+{
+  "metadata": {
+    "source_file": "C:\\Users\\minky\\Downloads\\mrconvert_v1\\HVDC STATUS(20250815).xlsx",
+    "total_records": 755,
+    "generated_at": "2025-10-22T21:48:13.204488",
+    "schema_version": "1.0"
+  },
+  "shipments": [
+    {
+      "no": 1,
+      "hvdc_code": "HVDC-ADOPT-PPL-0001",
+      "mr_number": "",
+      "commercial_invoice_no": "",
+      "invoice_date": "2023-11-10T00:00:00",
+      "po_number": "",
+      "vendor": "Prysmian",
+      "category": "Elec",
+      "main_description": "",
+      "sub_description": "±320kV Land Cable",
+      "incoterms": "CIF",
+      "currency": "EUR",
+      "invoice_value": 0,
+      "freight": 0,
+      "insurance": 0,
+      "cif_value": 0,
+      "coe": "FRANCE",
+      "pol": "Le Havre",
+      "pod": "Mina Zayed",
+      "bl_awb_no": "",
+      "vessel_flight_no": "",
+      "vessel_imo_no": "",
+      "shipping_line": "BBC",
+      "forwarder": "Allied Seafreight Line",
+      "ship_mode": "",
+      "pkg": 19,
+      "containers": {},
+      "quantities": {
+        "qty_of_cntr": 0.0,
+        "o_bulk": 1290.89,
+        "cbm": 1290.89
+      },
+      "logistics": {
+        "etd": "2023-11-12T00:00:00",
+        "atd": "2023-11-12T00:00:00",
+        "eta": "2023-11-30T00:00:00",
+        "ata": "2023-12-01T00:00:00",
+        "attestation_date": "2023-11-29T00:00:00",
+        "do_collection": "2023-11-30T00:00:00",
+        "customs_start": "2023-11-29T00:00:00",
+        "customs_close": "45261.0",
+        "custom_code": "47150.0"
+      },
+      "customs": {},
+      "delivery": {
+        "jdn_mzd": 
