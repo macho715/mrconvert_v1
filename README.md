@@ -59,6 +59,7 @@ MACHO-GPT 시스템을 위한 문서 변환 및 온톨로지 프레임워크입�
 ### 1. 문서 변환
 - **WhatsApp 대화**: JSON 형식으로 변환, 엔티티 추출
 - **Excel 파일**: 구조화된 JSON/CSV로 변환
+- **이미지 스캔(PNG/JPG/TIFF)**: OCR을 통해 텍스트/Markdown/JSON 출력 생성
 - **Markdown 문서**: 머신러더블 텍스트로 변환
 
 ### 2. 온톨로지 관리
@@ -102,6 +103,9 @@ mrconvert ./incoming --out ./out --format txt --ocr auto --lang kor+eng
 
 # 3) Force OCR (e.g., scanned PDF)
 mrconvert scan.pdf --out out --format txt --ocr force
+
+# 3-b) OCR a scanned image (PNG/JPG)
+mrconvert invoice.png --out out --format txt md --ocr auto
 ```
 
 #### Bidirectional Conversion
@@ -122,7 +126,7 @@ For `--format json`, schema:
 {
   "meta": {
     "source": "<path>",
-    "type": "pdf|docx",
+  "type": "pdf|docx|image",
     "pages": 10,
     "parsed_at": "YYYY-MM-DDTHH:MM:SSZ",
     "ocr": {"used": true, "engine": "ocrmypdf|pytesseract|none", "lang": "kor+eng"}

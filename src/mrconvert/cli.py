@@ -13,9 +13,9 @@ from . import (
     docx_converter,
     bidirectional,
     whatsapp_parser,
-    excel_converter,
+    image_converter,
 )
-from .utils import ensure_dir, write_text, write_json, walk_inputs, OCRConfig
+from .utils import ensure_dir, write_text, write_json, walk_inputs, OCRConfig, IMAGE_SUFFIXES
 
 console = Console()
 
@@ -29,12 +29,17 @@ def _process_file(
     ocr_mode: str,
     lang: str | None,
 ):
-    if path.suffix.lower() == ".pdf":
+    suffix = path.suffix.lower()
+    if suffix == ".pdf":
         data = pdf_converter.extract_pdf(
             path, keep_layout=keep_layout, ocr=OCRConfig(mode=ocr_mode, lang=lang)
         )
-    elif path.suffix.lower() == ".docx":
+    elif suffix == ".docx":
         data = docx_converter.extract_docx(path)
+    elif suffix in IMAGE_SUFFIXES:
+        data = image_converter.extract_image(
+            path, ocr=OCRConfig(mode=ocr_mode, lang=lang)
+        )
     else:
         console.print(f"[yellow]Skip unsupported file:[/] {path}")
         return
@@ -75,9 +80,12 @@ def _process_file(
 def build_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(
         prog="mrconvert",
-        description="Convert PDF/DOCX to machine-readable TXT/MD/JSON or bidirectional PDF↔DOCX conversion.",
+        description=(
+            "Convert PDF/DOCX/image files to machine-readable TXT/MD/JSON or bidirectional "
+            "PDF↔DOCX conversion."
+        ),
     )
-    p.add_argument("input", help="File or folder containing .pdf/.docx")
+    p.add_argument("input", help="File or folder containing .pdf/.docx/.png/.jpg")
     p.add_argument(
         "--out",
         dest="out",
@@ -319,6 +327,15 @@ def _run_excel_conversion(
 ) -> int:
     """Run Excel to JSON/CSV/Markdown conversion mode"""
     console.print("[blue]Excel 변환 모드 시작[/]")
+
+    try:
+        from . import excel_converter
+    except ModuleNotFoundError as exc:
+        console.print(
+            "[red]Error:[/] Excel conversion requires optional dependencies (pandas/openpyxl)."
+        )
+        console.print(f"[red]Detail:[/] {exc}")
+        return 2
 
     converter = excel_converter.ExcelConverter()
 
