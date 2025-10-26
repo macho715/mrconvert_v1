@@ -14,7 +14,7 @@ SUPPORTED_SUFFIXES = {".pdf", ".docx"} | IMAGE_SUFFIXES
 def _normalize_suffixes(suffixes: Iterable[str] | None) -> set[str]:
     normalized: set[str] = set()
     if suffixes is None:
-        return {".pdf", ".docx"}
+        return {".pdf", ".docx"} | IMAGE_SUFFIXES
 
     for suffix in suffixes:
         cleaned = suffix.strip().lower()

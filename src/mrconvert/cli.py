@@ -13,11 +13,12 @@ from . import (
     docx_converter,
     bidirectional,
     whatsapp_parser,
+    excel_converter,
     image_converter,
 )
 from .utils import ensure_dir, write_text, write_json, walk_inputs, OCRConfig, IMAGE_SUFFIXES
 
-TEXT_SUFFIXES = {".pdf", ".docx"}
+TEXT_SUFFIXES = {".pdf", ".docx"} | IMAGE_SUFFIXES
 WHATSAPP_SUFFIXES = {".txt"}
 EXCEL_SUFFIXES = {".xlsx", ".xls"}
 
