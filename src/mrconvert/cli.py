@@ -17,6 +17,10 @@ from . import (
 )
 from .utils import ensure_dir, write_text, write_json, walk_inputs, OCRConfig
 
+TEXT_SUFFIXES = {".pdf", ".docx"}
+WHATSAPP_SUFFIXES = {".txt"}
+EXCEL_SUFFIXES = {".xlsx", ".xls"}
+
 console = Console()
 
 
@@ -199,7 +203,14 @@ def run(argv: list[str] | None = None) -> int:
     out_dir = Path(args.out).expanduser().resolve()
     ensure_dir(out_dir)
 
-    files = list(walk_inputs(in_path))
+    if args.excel_to_json:
+        suffixes = EXCEL_SUFFIXES
+    elif args.whatsapp_to_json:
+        suffixes = WHATSAPP_SUFFIXES
+    else:
+        suffixes = TEXT_SUFFIXES
+
+    files = list(walk_inputs(in_path, suffixes=suffixes))
     if not files:
         console.print(f"[red]No files found under:[/] {in_path}")
         return 2
