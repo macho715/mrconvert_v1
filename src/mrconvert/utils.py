@@ -8,6 +8,9 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Iterable, List, Dict, Any
 
+IMAGE_SUFFIXES = {".png", ".jpg", ".jpeg", ".tif", ".tiff", ".bmp", ".gif"}
+SUPPORTED_SUFFIXES = {".pdf", ".docx"} | IMAGE_SUFFIXES
+
 def ensure_dir(path: Path) -> None:
     path.mkdir(parents=True, exist_ok=True)
 
@@ -43,8 +46,9 @@ def is_docx(path: Path) -> bool:
 
 def walk_inputs(input_path: Path) -> Iterable[Path]:
     if input_path.is_file():
-        yield input_path
+        if input_path.suffix.lower() in SUPPORTED_SUFFIXES:
+            yield input_path
     else:
         for p in input_path.rglob("*"):
-            if p.is_file() and p.suffix.lower() in {".pdf", ".docx"}:
+            if p.is_file() and p.suffix.lower() in SUPPORTED_SUFFIXES:
                 yield p
