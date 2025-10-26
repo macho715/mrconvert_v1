@@ -11,6 +11,21 @@ from typing import Iterable, List, Dict, Any
 IMAGE_SUFFIXES = {".png", ".jpg", ".jpeg", ".tif", ".tiff", ".bmp", ".gif"}
 SUPPORTED_SUFFIXES = {".pdf", ".docx"} | IMAGE_SUFFIXES
 
+def _normalize_suffixes(suffixes: Iterable[str] | None) -> set[str]:
+    normalized: set[str] = set()
+    if suffixes is None:
+        return {".pdf", ".docx"}
+
+    for suffix in suffixes:
+        cleaned = suffix.strip().lower()
+        if not cleaned:
+            continue
+        if not cleaned.startswith("."):
+            cleaned = f".{cleaned}"
+        normalized.add(cleaned)
+
+    return normalized
+
 def ensure_dir(path: Path) -> None:
     path.mkdir(parents=True, exist_ok=True)
 
@@ -44,11 +59,22 @@ def is_pdf(path: Path) -> bool:
 def is_docx(path: Path) -> bool:
     return path.suffix.lower() == ".docx"
 
-def walk_inputs(input_path: Path) -> Iterable[Path]:
+def walk_inputs(input_path: Path, suffixes: Iterable[str] | None = None) -> Iterable[Path]:
+    normalized_suffixes = _normalize_suffixes(suffixes)
+
+    def matches(path: Path) -> bool:
+        suffix = path.suffix.lower()
+        if suffixes is None:
+            return suffix in normalized_suffixes
+        if not normalized_suffixes:
+            return False
+        return suffix in normalized_suffixes
+
     if input_path.is_file():
-        if input_path.suffix.lower() in SUPPORTED_SUFFIXES:
+        if matches(input_path):
             yield input_path
-    else:
-        for p in input_path.rglob("*"):
-            if p.is_file() and p.suffix.lower() in SUPPORTED_SUFFIXES:
-                yield p
+        return
+
+    for p in input_path.rglob("*"):
+        if p.is_file() and matches(p):
+            yield p
